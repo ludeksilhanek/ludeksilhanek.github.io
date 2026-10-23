@@ -17,14 +17,14 @@
 
 <h2>Jaká data nástroj čte</h2>
 <p>S oprávněním <code>gmail.readonly</code> (jen čtení) čte z autorova Gmailu výhradně zprávy se štítkem <em>Newslettery/AI</em> – informační newslettery od schválených odesílatelů –
-a z nich jen hlavičky: předmět, odesílatele a datum. Nečte jiné zprávy, kontakty ani jiné služby Google. Nic neposílá, nemaže ani neupravuje.</p>
+a z nich předmět, odesílatele, datum a nadpisy jednotlivých článků uvnitř newsletteru. Nečte jiné zprávy, kontakty ani jiné služby Google. Nic neposílá, nemaže ani neupravuje.</p>
 
 <h2>K čemu data slouží</h2>
-<p>Z hlaviček vznikne krátký seznam došlých newsletterů v soukromém ranním přehledu autora. Data se nepředávají žádné umělé inteligenci ani třetí straně,
+<p>Vznikne krátký seznam došlých newsletterů s nadpisy jejich článků v soukromém ranním přehledu autora. Data se nepředávají žádné umělé inteligenci ani třetí straně,
 nepoužívají se k reklamě a nikomu se neprodávají.</p>
 
 <h2>Uložení a zabezpečení</h2>
-<p>Texty e-mailů se neukládají. Ukládá se jen seznam předmětů a odesílatelů v soukromém repozitáři autora na GitHubu.
+<p>Celé texty e-mailů se neukládají. Ukládá se jen seznam předmětů, odesílatelů a nadpisů článků v soukromém repozitáři autora na GitHubu.
 Přístupové klíče jsou uložené jako šifrované tajné hodnoty (GitHub Actions Secrets), nikdy v kódu.</p>
 
 <h2>Zrušení přístupu</h2>
@@ -38,9 +38,9 @@ Přístupové klíče jsou uložené jako šifrované tajné hodnoty (GitHub Act
 
 <div class="en">
 <h2>English summary</h2>
-<p>Žán briefing is a personal tool used only by its author with his own Google account. With the read-only scope <code>gmail.readonly</code> it reads only the headers (subject, sender, date) of messages labelled
-<em>Newslettery/AI</em> in the author's Gmail and lists them in his private daily briefing. No data is sent to any AI service or third party, sold, or used for advertising.
-Email bodies are not stored; only the list of subjects and senders is kept in the author's private GitHub repository;
+<p>Žán briefing is a personal tool used only by its author with his own Google account. With the read-only scope <code>gmail.readonly</code> it reads only messages labelled
+<em>Newslettery/AI</em> in the author's Gmail – subject, sender, date and the headlines of the articles inside – and lists them in his private daily briefing.
+No data is sent to any AI service or third party, sold, or used for advertising. Full email bodies are not stored; only subjects, senders and article headlines are kept in the author's private GitHub repository;
 credentials are stored as encrypted GitHub Actions secrets. Access can be revoked at any time at myaccount.google.com/connections. The use and transfer of information received
 from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
 </div>
