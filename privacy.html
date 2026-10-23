@@ -19,9 +19,12 @@
 <p>S oprávněním <code>gmail.readonly</code> (jen čtení) čte z autorova Gmailu výhradně zprávy se štítkem <em>Newslettery/AI</em> – informační newslettery od schválených odesílatelů –
 a z nich předmět, odesílatele, datum a nadpisy jednotlivých článků uvnitř newsletteru. Nečte jiné zprávy, kontakty ani jiné služby Google. Nic neposílá, nemaže ani neupravuje.</p>
 
+<p>Dále čte jen hlavičky (odesílatel, předmět, datum) zpráv v hlavní doručené poště za posledních 7 dní, aby poznal, na které autor ještě neodpověděl,
+a s oprávněním <code>calendar.readonly</code> (jen čtení) čas a název událostí v jeho kalendářích na dnešek a zítřek.</p>
+
 <h2>K čemu data slouží</h2>
-<p>Vznikne krátký seznam došlých newsletterů s nadpisy jejich článků v soukromém ranním přehledu autora. Data se nepředávají žádné umělé inteligenci ani třetí straně,
-nepoužívají se k reklamě a nikomu se neprodávají.</p>
+<p>Vznikne soukromý ranní přehled autora: seznam došlých newsletterů s nadpisy článků, nejvýš pět zpráv čekajících na odpověď a události na dnes a zítra.
+Data se nepředávají žádné umělé inteligenci ani třetí straně, nepoužívají se k reklamě a nikomu se neprodávají.</p>
 
 <h2>Uložení a zabezpečení</h2>
 <p>Celé texty e-mailů se neukládají. Ukládá se jen seznam předmětů, odesílatelů a nadpisů článků v soukromém repozitáři autora na GitHubu.
@@ -39,7 +42,8 @@ Přístupové klíče jsou uložené jako šifrované tajné hodnoty (GitHub Act
 <div class="en">
 <h2>English summary</h2>
 <p>Žán briefing is a personal tool used only by its author with his own Google account. With the read-only scope <code>gmail.readonly</code> it reads only messages labelled
-<em>Newslettery/AI</em> in the author's Gmail – subject, sender, date and the headlines of the articles inside – and lists them in his private daily briefing.
+<em>Newslettery/AI</em> in the author's Gmail – subject, sender, date and the headlines of the articles inside – and lists them in his private daily briefing. It also reads only the headers (sender, subject, date) of primary-inbox messages from the last 7 days
+to list up to five he has not replied to yet, and, with the read-only scope <code>calendar.readonly</code>, the time and title of his calendar events for today and tomorrow.
 No data is sent to any AI service or third party, sold, or used for advertising. Full email bodies are not stored; only subjects, senders and article headlines are kept in the author's private GitHub repository;
 credentials are stored as encrypted GitHub Actions secrets. Access can be revoked at any time at myaccount.google.com/connections. The use and transfer of information received
 from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
